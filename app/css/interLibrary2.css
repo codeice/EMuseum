@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-07-03 16:35:34
+ * @version $Id$
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+
+.clearfix:before{
+    content: "";
+    display: inline-block;
+    visibility: hidden;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color:#F0F2F1;
+}
+
+.content-wrapper {
+    width:990px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    padding-top:10px;
+}
+
+/*block list*/
+.ul-block{
+    float:left;
+}
+ul>li{
+    float: left;
+    width: 330px;
+    height: 241px;
+    margin-bottom:20px;
+}
+
+
+.block{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+
+.block:hover{
+    cursor:pointer;
+}
+
+.block img{
+    width: 100%;
+    max-height: 178px;
+}
+
+.block-title{
+    width:100%;
+    height: 63px;
+    background:#252628;
+    position: relative;
+    margin-top:-5px;
+}
+
+ul>li:nth-child(even) .block-title{
+    background:#191B1A;
+}
+
+.block-title:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-width:10px 18px 10px 18px;
+    border-color:transparent transparent #252628 transparent;
+    border-style: solid;
+    display: block;
+    position: absolute;
+    left:30px;
+    top:-20px;
+    z-index: 1000;
+}
+
+.block p{
+    position: absolute;
+    left:20px;
+    bottom:23px;
+    font-size: 16px;
+    color: #B5B5B5;
+}
+

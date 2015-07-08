@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>时间控件</title>
+	<link href="css/timeControl.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/timeControl.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="time-control" id="divTab" runat="server">
+    <div class="time-year">
+        <div id='yearChangeDiv' class='timeChangeDiv'>
+            <table>
+                <tr>
+                    <td class='date-item'>
+                        2008
+                    </td>
+                    <td class='date-item'>
+                        2013
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-item'>
+                        2009
+                    </td>
+                    <td class='date-item'>
+                        2014
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-item'>
+                        2010
+                    </td>
+                    <td class='date-item'>
+                        2015
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-item'>
+                        2011
+                    </td>
+                    <td class='date-item'>
+                        2016
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-item'>
+                        2012
+                    </td>
+                    <td class='date-item'>
+                        2017
+                    </td>
+                </tr>
+                <tr class='date-operation'>
+                    <td id='date-sub'>
+                     <span > &lt;</span> 
+                    </td>
+                    <td id='date-plus'>
+                       <span>&gt;</span> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='hidYear-button' class="timeUnit">
+            <input type="text" id="hidYear" value="2015" class="year"/>
+			<span>年</span>
+			<div class="DownwardTriangle"></div>
+        </div>
+    </div>
+    <div class="time-month">
+        <div id='monthChangeDiv' class="timeChangeDiv">
+            <table>
+                <tr>
+                    <td class='date-month-item'>
+                        一月<input type="hidden" value='1' />
+                    </td>
+                    <td class='date-month-item'>
+                        七月<input type="hidden" value='7' />
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-month-item'>
+                        二月<input type="hidden" value='2' />
+                    </td>
+                    <td class='date-month-item'>
+                        八月<input type="hidden" value='8' />
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-month-item'>
+                        三月<input type="hidden" value='3' />
+                    </td>
+                    <td class='date-month-item'>
+                        九月<input type="hidden" value='9' />
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-month-item'>
+                        四月<input type="hidden" value='4' />
+                    </td>
+                    <td class='date-month-item'>
+                        十月<input type="hidden" value='10' />
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-month-item'>
+                        五月<input type="hidden" value='5' />
+                    </td>
+                    <td class='date-month-item'>
+                        十一月<input type="hidden" value='11' />
+                    </td>
+                </tr>
+                <tr>
+                    <td class='date-month-item'>
+                        六月<input type="hidden" value='6' />
+                    </td>
+                    <td class='date-month-item'>
+                        十二月<input type="hidden" value='12' />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='hidMonth-button' class="timeUnit">
+            <input type="text" id="hidMonth" value="8" class="month"  />
+			<span>月</span>
+			<div class="DownwardTriangle"></div>
+        </div>
+    </div>
+    <div class="time-Day">
+        <div id='turn-date-left' class="time-Day-button">
+            &lt;
+        </div>
+        <div class='timeDay-button norright'>
+            <div id="timeDay-Number" class="timeDay-number">
+            </div>
+        </div>
+        <div id='turn-date-right' class="time-Day-button">
+            &gt;
+        </div>
+    </div>
+    
+</div>
+
+    <div class="bg-white">
+        <div id="div1">
+        </div>
+    </div>
+</body>
+</html>
+

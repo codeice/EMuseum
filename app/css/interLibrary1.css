@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2015-07-03 16:35:34
+ * @version $Id$
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+
+.clearfix:after{
+    content: "";
+    display: inline-block;
+    visibility: hidden;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color:#F0F2F1;
+}
+
+.content-wrapper {
+    width:990px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    padding-top:10px;
+}
+
+/*block list*/
+.ul-block{
+    float:left;
+}
+
+ul>li{
+    float: left;
+    width: 330px;
+    height: 241px;
+    margin-bottom:20px;
+}
+
+.block{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
+.block:hover{
+    cursor:pointer;
+}
+
+.block img{
+    width: 100%;
+    height: 100%;
+}
+
+.block p{
+    position: absolute;
+    left:20px;
+    bottom:23px;
+    font-size: 16px;
+    color: #B5B5B5;
+}
+
